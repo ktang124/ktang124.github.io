@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kevin Tang Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+              <img src="img/kev.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Kevin Tang</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">CS Student at UMD, College Park</p>
+                   <img src="img/KevinProfile.jpg" width = "350" height="525"/>
+        </section>
+
+
+        <!-- My services -->
+                  <section class="my-services" id="services">
+                  <h2 class="section__title section__title--services">What I do</h2>
+                  <div class="services">
+                      <div class="service">
+                          <h3>Computer Repair</h3>
+                          <p>I have repaired at least 50 computers, mainly macbooks. If you need a laptop or desktop repaired, feel free to contact me for a free consulation.</p>
+                      </div> <!-- / service -->
+
+                      <div class="service">
+                          <h3>Custom PC Builds</h3>
+                          <p>I have built many PCs for friends and family, I can help you design your dream desktop and build it for you!</p>
+                      </div> <!-- / service -->
+
+                      <div class="service">
+                          <h3>Violin and Viola Lessons</h3>
+                          <p>I have taught violin and viola for 3 years. I focus on fundamentals and the mechanics of playing early on to prepare my students to move on to professional teachers if they choose to do so. I am not planning on teaching during the school year.</p>
+                      </div> <!-- / service -->
+                  </div> <!-- / services -->
+
+                  <a href="#work" class="btn">My Work</a>
+              </section>
+              <!-- About me -->
+                <section class="about-me" id="about">
+                   <h2 class="section__title section__title--about">Who I am</h2>
+                   <p class="section__subtitle section__subtitle--about">Amateur Leetcoder living with parents</p>
+
+                   <div class="about-me__body">
+                       <p>I am a computer nerd who likes to build and fix computer hardware and software. Aside from that, I enjoy the musical, visual, and culinary arts. I play the violin, viola, and piano.
+                         I also enjoy macro photography and drawing. If computers take my job one day, I'll become a house dad so I can cook and bake all day.</p>
+
+                   </div>
+
+                   <img src="img/KevinG.jpg" alt="Kevin" class="about-me__img">
+                </section>
+                <!-- My Work -->
+                         <section class="my-work" id="work">
+                             <h2 class="section__title">My work</h2>
+                             <p class="section__subtitle"></p>
+
+                             <div class="portfolio">
+                                 <!-- Portfolio item 01 -->
+                                 <a href="#" class="portfolio__item">
+                                     <img src="img/portfolio-01.jpg" width = "525" height="350"/>
+                                 </a>
+
+                                 <a href="#" class="portfolio__item">
+                                     <img src="img/MacbookPro.jpg" width = "525" height="350"/>
+                                 </a>
+                                 <a href="#" class="portfolio__item">
+                                     <img src="img/motherboard.jpg" width = "475" height="350"/>
+                                 </a>
+                                 <a href="#" class="portfolio__item">
+                                     <img src="img/IMG_2844.jpg" width = "475" height="350"/>
+                                 </a>
+
+                             </div>
+                         </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:ktang124@terpmail.umd.edu" class="footer__link">ktang124@terpmail.umd.edu</a>
+            <ul class="social-list">
+
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/kevin-tang-5b91641b7/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ktang124">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
