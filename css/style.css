@@ -96,10 +96,16 @@ h3 {
     line-height: 1;
     margin: 0;
 }
+h4 {
+    line-height: 1;
+    margin: 0;
+    color: var(--clr-accent); /* Red color from your custom properties */
+}
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+h4 { font-size: var(--fs-h3) }
 
 
 .section__title {
@@ -146,35 +152,35 @@ header {
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     background: var(--clr-dark);
     color: var(--clr-light);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 60px; /* Adjusts position under the header */
+    right: 10px; /* Keeps it aligned near the right */
+    width: 250px; /* Limits the width of the menu */
     z-index: 100;
-
+    box-shadow: var(--bs); /* Adds shadow for clarity */
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    border-radius: 5px; /* Adds slight rounding to corners */
 }
 
 .nav__list {
     list-style: none;
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 1em; /* Adds padding around the list */
 }
 
 .nav__link {
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3); /* Reduced font size to fit smaller menu */
     text-decoration: none;
+    padding: 0.5em 0; /* Adds spacing between links */
 }
 
 .nav__link:hover {
@@ -249,7 +255,12 @@ header {
 
 .intro {
     position: relative;
+    background-color: #d0e7ff; /* Light blue background */
+    padding: 2em; /* Add padding to give space */
+    margin-bottom: -1em; /* Adjusts margin to overlap with the red bar */
 }
+
+
 
 .intro__img {
     box-shadow: var(--bs);
@@ -257,8 +268,13 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    background-color: var(--clr-accent); /* Red background */
+    padding: .25em 1em;
+    position: relative;
+    left: 0; /* Align with the blue background */
+    width: 100%; /* Make the red bar span the full width of the intro section */
+    box-sizing: border-box; /* Ensure padding doesn’t overflow the width */
 }
-
 @media (min-width: 600px) {
     .intro {
         display: grid;
